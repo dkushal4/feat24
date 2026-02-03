@@ -1,0 +1,22 @@
+pipeline:
+  name: input
+  identifier: input
+  tags: {}
+  projectIdentifier: kushal_test
+  orgIdentifier: Ng_Pipelines_K8s_Organisations
+  stages:
+    - stage:
+        name: s
+        identifier: s
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: FilesUpload
+                  name: FilesUpload_1
+                  identifier: FilesUpload_1
+                  spec: {}
+                  timeout: 30m
+        tags: {}
