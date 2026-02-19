@@ -1,0 +1,19 @@
+inputSet:
+  name: feat24terr
+  identifier: feat24terr
+  orgIdentifier: Ng_Pipelines_K8s_Organisations
+  projectIdentifier: kushal_test
+  pipeline:
+    identifier: feat24terr
+    stages:
+      - stage:
+          identifier: stage1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 20s
